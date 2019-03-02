@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th "http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" 
+            href="../../css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" type="text/css" media="all" 
+            href="../../css/layout.css" th:href="@{/css/layout.css}" />
+	<title>tag</title>
+</head>
+<body>
+    <div th:each = "category: ${categories}">
+        <h1 th:text = "${category.name}"></h1>
+        <div th:each = "review: ${category.reviews}">
+           <span><a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a></span>
+        </div>
+    	<a href = "http://localhost:8080/show-categories">Back to home</a>
+    </div>
+    
+</body>
+</html>
