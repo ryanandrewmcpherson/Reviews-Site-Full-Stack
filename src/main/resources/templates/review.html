@@ -13,7 +13,13 @@
         <h1 th:text = "${review.category.name} + ' ' + Review"></h1>
         <img th:src = "${review.picture}"></img>
     	<h2 th:text = "${review.title}"></h2>
-    	<p th:text = "${review.body}"></p>
+    	<p class = "body" th:text = "${review.body}"></p>
+    	<div class = "tags">
+	    	<div th:each = "tag: ${review.tags}" >
+	    	    <a th:href = "@{/tag(id=${tag.id})}" th:text = "'#' + ${tag.name}"></a>    
+	    	</div>
+	    </div>
+    	<hr></hr>
     	<a href = "http://localhost:8080/show-reviews">Back to home</a>
     </div>
 </body>

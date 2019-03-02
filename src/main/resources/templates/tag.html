@@ -14,6 +14,7 @@
         <div th:each = "review: ${tags.reviews}">
         	<a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a>
         </div>
+        <hr></hr>
     	<a href = "http://localhost:8080/show-reviews">Back to home</a>
      </div>  
 </body>

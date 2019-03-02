@@ -9,11 +9,12 @@
   <title>tag</title>
 </head>
 <body>
-    <div class = 'outer' th:each = "category: ${categories}">
+    <div th:each = "category: ${categories}">
         <h1 th:text = "${category.name}"></h1>
-        <div class = 'inner' th:each = "review: ${category.reviews}">
+        <div th:each = "review: ${category.reviews}">
            <a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a>
         </div>
+        <hr></hr>
     	<a href = "http://localhost:8080/show-categories">Back to home</a>
     </div>
     

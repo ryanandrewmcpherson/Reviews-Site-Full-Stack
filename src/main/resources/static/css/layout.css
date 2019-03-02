@@ -10,16 +10,33 @@ div{
     align-content:center;
     align-self:center;
 }
+
+div.tags{
+    flex-direction:row;
+    justify-content:left;
+    align-content:center;
+}
+
+div.links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content:center;
+}
+
 img{
     align-self: center;
 }
 h1{
     align-self:center;
 }
+h3{
+    display:grid;
+    align-items:center
+}
 
 P{
     align-self:center;
-    padding:20px;
 }
 
 li{

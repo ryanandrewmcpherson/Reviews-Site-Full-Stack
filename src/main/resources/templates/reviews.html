@@ -14,9 +14,14 @@
    
    <div th:each = "review: ${reviews}">
    		<li> 
-   		<p th:text = "${review.category.name}"> </p>
    		<a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a>
    		</li>
+   		
+   </div>
+   <hr></hr>
+   <div class = "links">
+   			<a href = "http://localhost:8080/show-categories">Categories</a>
+   			<a href = "http://localhost:8080/show-tags">Tags</a>
    </div>
 </body>
 </html>

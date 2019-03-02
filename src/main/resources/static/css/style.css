@@ -4,24 +4,34 @@
 
 
 body{
-    
     margin:0px;
-    padding:20px;
 }
 
-div.outer{
-   background-color:lightgray;
+div{
+    width:100%;
 }
 
+div.tags{
+   max-width:80%;
+}
 
+div.tags a{
+   color:black;
+   background-color:white;
+   width:fit-content;
+   margin:0px;
+}
+
+div.tags div{
+  width:fit-content;
+}
 
 h1{
     background-color:gray;
     text-align: center;
     margin-block-start: 0px;
     margin-block-end:0px;
-    margin-top:20px;
-    margin-bottom:20px;
+    width:100%;
     padding:20px;
     color:white;
 }
@@ -31,8 +41,20 @@ h2{
     text-align:center;
 }
 
+hr{
+   width:80%;
+}
+
 p{
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding:20px;
+    max-width:80%;
+}
+
+p.body{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 li{
@@ -46,6 +68,7 @@ a{
     padding:10px;
     margin:20px;
     border-radius:20px;
+    width:300px;
 }
 
 img{
