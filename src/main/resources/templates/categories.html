@@ -12,8 +12,8 @@
    <h1> Categories </h1>
    <div th:each = "category: ${categories}">
         <li>
-   		<span><a th:href = "@{/category(id=${category.id})}" th:text = "${category.name}"> </a></span>
-   		</li>
+        <a th:href = "@{/category(id=${category.id})}" th:text = "${category.name}"> </a>
+        </li>
    </div>
 </body>
 </html>
